@@ -3,11 +3,21 @@ mostrarMensaje = (mensaje) => {
   document.querySelector('#divMensaje').innerHTML = mensaje;
 }
 
+let form=document.querySelector('#prodNuevo')
+form.style.display= 'none';
+let añadir=document.querySelector('#añadir')
+
+  añadir.addEventListener('click', ()=>{
+    
+    form.style.display = "block";
+  });
 // Event listener para el botón "Añadir Producto"
 document.getElementById('añadir').addEventListener('click', function () {
   const formulario = document.getElementById('prodNuevo');
   formulario.classList.toggle('new');
 });
+
+
 
 fetch(endpoint)
   .then(respuesta => respuesta.json())
@@ -25,7 +35,7 @@ const obtenerDatos = async () => {
       productos +=
         `<div class="card border border-1 border-dark d-flex flex-column align-items-center"
                   style="width: 100%; max-width: 300px; margin:30px">
-                  <img src="fotos/${prod.imagen}" class="card-img-top" alt="...">
+                  <img src="${prod.imagen}" class="card-img-top" alt="...">
                   <div class="card-body ">
                       <h4>${prod.titulo}</h4>
                       <p class="card-text ">${prod.descripcion}</p>

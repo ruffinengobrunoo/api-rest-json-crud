@@ -15,7 +15,7 @@
         "titulo": "Libro",
         "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum.",
         "precio": "1000",
-        "imagen": ".fotos/img4.jpg"
+        "imagen": "./fotos/img4.jpg"
     },
     {
         "titulo": "Libro",
@@ -27,7 +27,7 @@
         "titulo": "Libro",
         "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum.",
         "precio": "1000",
-        "imagen": ".fotos/img6.jpg"
+        "imagen": "./fotos/img6.jpg"
     },
     {
         "titulo": "Libro",
