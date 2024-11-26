@@ -9,6 +9,12 @@
         "titulo": "Libro",
         "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum.",
         "precio": "1000",
+        "imagen": "./fotos/img2.jpg"
+    },
+    {
+        "titulo": "Libro",
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum.",
+        "precio": "1000",
         "imagen": "./fotos/img3.jpg"
     },
     {
@@ -28,11 +34,5 @@
         "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum.",
         "precio": "1000",
         "imagen": "./fotos/img6.jpg"
-    },
-    {
-        "titulo": "Libro",
-        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum.",
-        "precio": "1000",
-        "imagen": "./fotos/img7.jpg"
     }
 ]
