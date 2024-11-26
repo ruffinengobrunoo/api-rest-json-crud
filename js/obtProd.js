@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/productos')
+fetch('./data/datos.json')
 
     .then(respuesta => respuesta.json())
     // .then(datos=> console.log(datos))

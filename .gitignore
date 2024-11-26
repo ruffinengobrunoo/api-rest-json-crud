@@ -1,2 +1,5 @@
 node_modules
 .nvmrc
+
+package-lock
+package

@@ -1,0 +1,38 @@
+[
+    {
+        "titulo": "Libro",
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum.",
+        "precio": "1000",
+        "imagen": "img1.jpg"
+    },
+    {
+        "titulo": "Libro",
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum.",
+        "precio": "1000",
+        "imagen": "img3.jpg"
+    },
+    {
+        "titulo": "Libro",
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum.",
+        "precio": "1000",
+        "imagen": "img4.jpg"
+    },
+    {
+        "titulo": "Libro",
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum.",
+        "precio": "1000",
+        "imagen": "img5.jpg"
+    },
+    {
+        "titulo": "Libro",
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum.",
+        "precio": "1000",
+        "imagen": "img6.jpg"
+    },
+    {
+        "titulo": "Libro",
+        "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum.",
+        "precio": "1000",
+        "imagen": "img2.jpg"
+    }
+]

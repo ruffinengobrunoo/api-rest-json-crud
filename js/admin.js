@@ -1,5 +1,4 @@
-// const endpoint = 'https://editorial-9o6g.onrender.com/productos'
-const endpoint = 'http://localhost:3000/productos'
+const endpoint = './data/datos.json'
 mostrarMensaje = (mensaje) => {
   document.querySelector('#divMensaje').innerHTML = mensaje;
 }
@@ -55,51 +54,6 @@ const obtenerDatos = async () => {
     mostrarMensaje('error al cargar productos')
   }
 }
-// obtenerDatos();
-
-// // ver los datos enviados al back en el front
-// // const mostrarProductos = (datos) => {
-// //   let productos = ''
-// //   const contenedor = document.querySelector('#divProdNuevo')
-// //   datos.forEach(datos => {
-// //     productos +=
-// //       `<div class="card border border-1 border-dark d-flex flex-column align-items-center"
-// //             style="width: 100%; max-width: 300px; margin:30px">
-// //             <img src="fotos/${datos.img}" class="card-img-top" alt="...">
-// //             <div class="card-body ">
-// //                 <h4>${datos.titulo}</h4>
-// //                 <p class="card-text ">${datos.descripcion}</p>
-// //             </div>
-// // <div class="d-flex justify-content-between align-items-center w-100 mb-2 px-2">
-// //   <p class="card-text border border-secondary rounded p-2 mb-0">
-// //     <strong>${datos.precio}</strong>
-// //   </p>
-// //   <div class="d-flex ms-auto">
-// //     <a href="#prodEditar" class="btn btn-outline-warning me-2 edit onClick="eliminar(${datos.id})">
-// //       <i class="bi bi-pencil"></i>
-// //     </a>
-
-// //     <a class="btn btn-outline-danger" type="submit" id="eliminar" onClick="eliminar(${datos.id})">
-// //       <i class="bi bi-trash" id="eliminar"></i>
-// //     </a>
-// //   </div>
-// // </div>
-
-
-// //         </div>`
-// //   })
-// //   contenedor.innerHTML = productos
-
-// //   // Añadir event listeners a los botones "Editar"
-// //   const editButtons = document.querySelectorAll('.edit');
-// //   editButtons.forEach(button => {
-// //     button.addEventListener('click', function () {
-// //       const formulario = document.getElementById('prodEditar');
-// //       formulario.classList.toggle('newE');
-// //     });
-// //   });
-// // }
-
 
 
 // agregar producto
@@ -166,7 +120,7 @@ formulario.addEventListener('submit', (event) => {
 // eliminar producto por atrevido gato..
 const eliminar = (id) => {
   // console.log(id + " sos capo")
-  if (confirm('posta queres eliminar?')) {
+  if (confirm('en serio desea eliminar?')) {
     const eliminarProd = async () => {
       try {
         const res = await fetch(endpoint + '/' + id, { // endpoint con param
@@ -228,10 +182,11 @@ formEditar.addEventListener('submit', (event) => {
     id: formEditar.idEditar.value,
     titulo: formEditar.titulo.value,
     descripcion: formEditar.descripcion.value,
-    precio: formEditar.precio.value
+    precio: formEditar.precio.value,
+    imagen: formEditar.imagen.value
   }
 
-  if (!nuevosDatos.titulo || !nuevosDatos.descripcion || !nuevosDatos.precio) {
+  if (!nuevosDatos.titulo || !nuevosDatos.descripcion || !nuevosDatos.precio || !nuevosDatos.imagen) {
     document.querySelector('#mensajeEditar').innerHTML = '*Complete todos los datos'
     return
   }
